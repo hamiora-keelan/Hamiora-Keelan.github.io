@@ -19,5 +19,7 @@ body {
 
 h1 {
   font-family: 'Comfortaa', sans-serif;
+  color: white;
+  text-align: center;
   /* Additional styling for the heading if needed */
 }

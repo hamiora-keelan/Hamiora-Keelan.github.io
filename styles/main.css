@@ -1,0 +1,23 @@
+/* styles/main.css */
+
+/* Import Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@300..700&display=swap');
+
+/* Apply styles to HTML elements */
+body {
+  background-color: #3e1464;
+}
+
+.intense-image {
+  background-image: url('../images/pexels-wendy-wei-1190298.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 100vh;
+  margin: 0;
+}
+
+h1 {
+  font-family: 'Comfortaa', sans-serif;
+  /* Additional styling for the heading if needed */
+}

@@ -16,8 +16,8 @@ body {
   height: 100vh;
   margin: 0;
 }
-.orange-text {
-  color: #ce5a17;
+.white-text {
+  color: white;
 }
 
 h1 {
@@ -25,7 +25,6 @@ h1 {
   color: #ce5a17;
   text-align: center;
   font-size: 100px;
-  padding: ;
   /* Additional styling for the heading if needed */
 }
 ul {
@@ -33,5 +32,16 @@ ul {
 }
 ul li {
   display: inline-block;
-  margin-right: 8px;
+  margin: 40px;
+  background-size: 10px;
+  background-color: #3e1464;
+  border: 5px;
+  border-style: solid;
+  border-color: #3e1464;
+  border-radius: 5%;
+  font-style: 'Comfortaa', sans-serif;
+  font-size: 30px;
+}
+.txt-center {
+  text-align: center;
 }

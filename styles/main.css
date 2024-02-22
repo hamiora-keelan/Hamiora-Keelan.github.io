@@ -16,10 +16,22 @@ body {
   height: 100vh;
   margin: 0;
 }
+.orange-text {
+  color: #ce5a17;
+}
 
 h1 {
   font-family: 'Comfortaa', sans-serif;
-  color: white;
+  color: #ce5a17;
   text-align: center;
+  font-size: 100px;
+  padding: ;
   /* Additional styling for the heading if needed */
+}
+ul {
+  list-style-type: none;
+}
+ul li {
+  display: inline-block;
+  margin-right: 8px;
 }

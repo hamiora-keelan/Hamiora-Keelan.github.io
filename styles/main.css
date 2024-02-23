@@ -78,10 +78,10 @@ ul li {
   transform: translate(-50%, -50%);
 }
 
-/* Media query for even smaller screens */
+
 @media (max-width: 480px) {
   div {
-    top: initial; /* Reset the top property */
-    margin-top: 100%; /* Adjust the margin-top for smaller screens */
+    top: initial; 
+    margin-top: 100%;
   }
 }

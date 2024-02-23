@@ -3,8 +3,14 @@
 /* Import Google Fonts */
 @import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@300..700&display=swap');
 
+.zero-margin-top {
+  margin-top: 0;
+}
+
 body {
   background-color: #3e1464;
+  margin: 0;
+  padding: 0;
 }
 
 .intense-image {
@@ -12,13 +18,18 @@ body {
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
-  height: 100vh;
+  height: 50vh;
   margin: 0;
+  padding: 0;
 }
 .white-text {
   color: white;
 }
-
+.white-text-2 {
+  font-style: 'Comfortaa', sans-serif;
+  font-size: 30px;
+  color: white;
+}
 h1 {
   font-family: 'Comfortaa', sans-serif;
   color: #ce5a17;
@@ -26,6 +37,9 @@ h1 {
   font-size: 100px;
 }
 ul {
+  list-style-type: none;
+}
+ol {
   list-style-type: none;
 }
 ul li {
@@ -36,7 +50,6 @@ ul li {
   border: 5px;
   border-style: solid;
   border-color: #ce5a17;
-  border-radius: ;
   font-style: 'Comfortaa', sans-serif;
   font-size: 30px;
 }
@@ -52,4 +65,10 @@ ul li {
   cursor: pointer;
   font-style: 'Comfortaa', sans-serif;
   font-size: 30px;
+}
+.centered-content {
+  position: relative;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
 }

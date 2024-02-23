@@ -3,7 +3,6 @@
 /* Import Google Fonts */
 @import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@300..700&display=swap');
 
-/* Apply styles to HTML elements */
 body {
   background-color: #3e1464;
 }
@@ -25,7 +24,6 @@ h1 {
   color: #ce5a17;
   text-align: center;
   font-size: 100px;
-  /* Additional styling for the heading if needed */
 }
 ul {
   list-style-type: none;
@@ -38,10 +36,20 @@ ul li {
   border: 5px;
   border-style: solid;
   border-color: #ce5a17;
-  border-radius: 6%;
+  border-radius: ;
   font-style: 'Comfortaa', sans-serif;
   font-size: 30px;
 }
 .txt-center {
   text-align: center;
+}
+.button-link a {
+  color: #fff; /* Text color */
+  padding: 10px 20px; /* Adjust padding for better appearance */
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  cursor: pointer;
+  font-style: 'Comfortaa', sans-serif;
+  font-size: 30px;
 }

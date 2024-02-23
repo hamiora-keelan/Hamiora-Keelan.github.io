@@ -22,6 +22,11 @@ body {
   margin: 0;
   padding: 0;
 }
+@media (max-width: 768px) {
+  .intense-image {
+    height: auto;
+  }
+}
 .white-text {
   color: white;
 }
@@ -58,7 +63,7 @@ ul li {
 }
 .button-link a {
   color: #fff; /* Text color */
-  padding: 10px 20px; /* Adjust padding for better appearance */
+  padding: 10px 20px;
   text-decoration: none;
   display: inline-block;
   font-size: 16px;
@@ -71,4 +76,12 @@ ul li {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
+}
+
+/* Media query for even smaller screens */
+@media (max-width: 480px) {
+  div {
+    top: initial; /* Reset the top property */
+    margin-top: 100%; /* Adjust the margin-top for smaller screens */
+  }
 }

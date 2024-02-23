@@ -34,11 +34,11 @@ ul li {
   display: inline-block;
   margin: 40px;
   background-size: 10px;
-  background-color: #3e1464;
+  background-color: #ce5a17;
   border: 5px;
   border-style: solid;
-  border-color: #3e1464;
-  border-radius: 5%;
+  border-color: #ce5a17;
+  border-radius: 6%;
   font-style: 'Comfortaa', sans-serif;
   font-size: 30px;
 }

@@ -19,7 +19,11 @@
         margin: 0 auto;
       }
       h2 {
-        font-size: 60px;
+        font-size: 50px;
+        color: #ce5a17;
+      }
+      h3 {
+        font-size: 40px;
         color: #ce5a17;
       }
       p {
@@ -30,8 +34,22 @@
       }
       .relative {
         position: relative;
-        right: 30px;
+        left: 0;
+        margin-left: 0;
       }
+      .shirnk-image {
+        width: 20%;
+        height: auto;
+      }
+      code {
+    font-family: 'Courier New', monospace;
+    background-color: #ce6b155a;
+    padding: 0.2em 0.4em;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 18px;
+}
+
     </style>
   </head>
   <body>
@@ -58,7 +76,7 @@
         </p>
       </div>
       <div>
-        <h2 class="relative">Relative Positioning: The bully</h2>
+        <h2>Relative Positioning: The bully</h2>
         <p>
           Relative positioning moves an element relative to its original
           position. It stays within its parent element but removes the element
@@ -66,10 +84,11 @@
           in the newly positioned element covering another element if it's
           placed over it, as relative positioning won't cause other elements to
           move.
-          <p>
-            You may have noticed the h1 title is positioned slighty to the Left.
-          </p>
         </p>
+            <div class="relative">
+              <img class="shirnk-image" src="images/tony-chopper-hidding.png" alt="chopper-from-one-piece-hiding">
+              </div>
+          <p>You may missed the famous reindeer hiding above, but he has been positioned using <code>position: relative</code> as seen below</p>
       </div>
       <div>
         <h2>Fixed positioning: The teachers pet</h2>

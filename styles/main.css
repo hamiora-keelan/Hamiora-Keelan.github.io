@@ -78,10 +78,14 @@ ul li {
   transform: translate(-50%, -50%);
 }
 
-
 @media (max-width: 480px) {
   div {
-    top: initial; 
+    top: initial;
     margin-top: 100%;
   }
+}
+h2 {
+  font-size: 60px;
+  color: #ce5a17;
+  font-style: 'Comfortaa', sans-serif;
 }

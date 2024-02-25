@@ -41,6 +41,10 @@
         width: 20%;
         height: auto;
       }
+      .shrink-image-2 {
+        width: 10%;
+        height:auto;
+      }
       code {
     font-family: 'Courier New', monospace;
     background-color: #ce6b155a;
@@ -54,6 +58,15 @@
     right: 0;
     top: 0;
   }
+      .relative-center {
+        position: relative;            
+      }
+      .absolute-positioning {
+        position: absolute;
+        right: 0;
+        top: 0;
+    
+      }
 
 
 
@@ -98,7 +111,7 @@
             <div class="relative">
               <img class="shirnk-image" src="images/tony-chopper-hidding.png" alt="chopper-from-one-piece-hiding">
               </div>
-          <p>You may missed the famous reindeer hiding above, but he has been positioned using <code>position: relative</code> as seen below.</p>
+          <p>You may have missed the famous reindeer hiding above, but he has been positioned using <code>position: relative</code> as seen below.</p>
           <div class="center">
           <img class="image-container" src="images/Code-relative.png">
         </div>
@@ -113,12 +126,13 @@
           space.
         </p>
         <div>
-        <img class="shirnk-image the-teachers-pet" src="images/orande-ball.png">
-      </div>
-      <p>The giant basketball following you down the page is made possible using <code> position: fixed;</code></p>
-      <img src="images/code-fixed.png"
+        <img class="shrink-image-2 the-teachers-pet" src="images/orande-ball.png">
       </div>
       <div>
+      <p>The giant basketball following you down the page is made possible using <code> position: fixed;</code></p>
+      <img src="images/code-fixed.png">
+      </div>
+      <div class="relative">
         <h2>Absolute positioning: The free spirit</h2>
         <p>
           Absolute positioning positions an element relative to its nearest
@@ -127,6 +141,15 @@
           containing block (typically the body element), behaving as if it were
           fixed.
         </p>
+        <div>
+          <img class= "absolute-positioning shrink-image-2" src="images/orande-ball.png">
+          <p>You should notice the basketball is now positioned at the top right corner of the <code>div</code>
+            This is done with <code>position absolute</code> shown below.
+          </p>
+          <img src="images/code-absolute.png">
+          <p>However, without adding a position to the <code>div</code> seen below, the basketball would resemble the fixed position ball in the top right corner of the viewport</p>
+          <img src="images/relative-applied.png">
+        </div>
       </div>
       <div>
         <h2>Conclusion</h2>
@@ -139,6 +162,7 @@
           resembling a "free spirit," anchors an element to the viewport,
           remaining fixed while scrolling.
         </p>
+      </div>
       </div>
     </div>
   </body>

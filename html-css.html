@@ -14,13 +14,13 @@
       h1 {
         text-align: center;
         font-size: 90px;
-        color: #ce5a17;
+        color: #c86830;
         width: 70%;
         margin: 0 auto;
       }
       h2 {
         font-size: 50px;
-        color: #ce5a17;
+        color: #c86830;
       }
       h3 {
         font-size: 40px;
@@ -28,6 +28,7 @@
       }
       p {
         font-size: 25px;
+        color: rgb(247, 247, 108);
       }
       ul {
         font-size: 25px;
@@ -59,13 +60,18 @@
     top: 0;
   }
       .relative-center {
-        position: relative;            
+        position: relative;  
+        right: 50%;
+        left: 50% ;         
       }
       .absolute-positioning {
         position: absolute;
         right: 0;
         top: 0;
     
+      }
+      ul li {
+        color: rgb(247, 247, 108)
       }
 
 
@@ -81,9 +87,9 @@
       <div>
         <h2>Introduction</h2>
         <p>
-          Without positioning, you might as well be living your life in 2d.
+          Without positioning, you might as well be living your life in 2D.
           Mastering the positioning properties will give you the freedom to move
-          content to your will. Most programs have a default setting, this also
+          content at will. Most programs have a default setting, this also
           applies to HTML and CSS. The default property for CSS positioning is
           Static. The Static property positions elements in the same order that
           they were written in HTML. However, if you don't change the
@@ -108,20 +114,21 @@
           placed over it, as relative positioning won't cause other elements to
           move.
         </p>
-            <div class="relative">
               <img class="shirnk-image" src="images/tony-chopper-hidding.png" alt="chopper-from-one-piece-hiding">
-              </div>
-          <p>You may have missed the famous reindeer hiding above, but he has been positioned using <code>position: relative</code> as seen below.</p>
-          <div class="center">
-          <img class="image-container" src="images/Code-relative.png">
+          <p>You may have missed the famous reindeer "Chopper" hiding above. This is his original position.</p>
+          <p>Now watch Chopper move to the center when I apply <code>class= "relative-center"</code></p>
+           <img class="image-container" src="images/code-relative.png">        
+        <div class="relative-center">
+        <img class="shirnk-image" src="images/tony-chopper-hidding.png">
         </div>
+        <p>chopper should now be relative center of his original postion.</p>
       </div>
       <div>
         <h2>Fixed positioning: The teachers pet</h2>
         <p>
-          Fixed positioning positions the element relative to the viewport and
+          Fixed positioning, positions the element relative to the viewport and
           ignores any positioning rules applied to the parent element. Fixed
-          elements stays in place following your viewport as you scroll your
+          elements stay in place following your viewport as you scroll your
           page, the original position of the element does not leave a blank
           space.
         </p>
@@ -135,7 +142,7 @@
       <div class="relative">
         <h2>Absolute positioning: The free spirit</h2>
         <p>
-          Absolute positioning positions an element relative to its nearest
+          Absolute positioning, positions an element relative to its nearest
           positioned ancestor. If no ancestors have been positioned, being a
           free spirit the element will position itself relative to the initial
           containing block (typically the body element), behaving as if it were

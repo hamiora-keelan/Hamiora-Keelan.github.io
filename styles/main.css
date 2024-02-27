@@ -2,99 +2,55 @@
 
 /* Import Google Fonts */
 @import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@300..700&display=swap');
-
-/*Global styling */
-body {
-  background-color: #3e1464;
-  margin: 0;
-  padding: 0;
+/*base font size*/
+html {
+  font-size: 15px;
 }
-.background-image {
-  position: absolute;
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
+/*page styling*/
+body {
+  background-color: purple;
+}
+/*background image*/
+#background-image-position {
+  position: relative;
   width: 100vw;
   height: auto;
   margin: 0;
   padding: 0;
+  background: 0;
 }
-/*adds div to background image */
-.container {
+/*top nav bar*/
+#nav-background {
   position: relative;
+  background: purple;
+  background-size: 100vw;
+  margin: 0;
+  padding: 0;
 }
-
-.zero-margin-top {
-  margin-top: 0;
+.top-nav-styling {
+  color: orange;
+  font-size: 2rem;
+  margin: 0;
+  padding: 0;
 }
-
-@media (max-width: 768px) {
-  .intense-image {
-    height: auto;
-  }
+/*main title styling*/
+#main-title-h1 {
+  color: orange;
+  font-family: comfortaa;
+  font-size: 5em;
 }
-.white-text {
-  color: rgb(247, 247, 108);
+#main-title-h2 {
+  color: orange;
+  font-family: comfortaa;
+  font-size: 3em;
 }
-.white-text-2 {
-  font-style: 'Comfortaa', sans-serif;
-  font-size: 30px;
-  color: rgb(247, 247, 108);
-}
-h1 {
-  font-family: 'Comfortaa', sans-serif;
-  color: #c86830;
-  text-align: center;
-  font-size: 100px;
-}
-/* removes styling from lists */
-ul {
-  list-style-type: none;
-}
-ol {
-  list-style-type: none;
-}
-/*Displays lists horizontally rather than vertically */
-ul li {
-  display: inline-block;
-  margin: 40px;
-  background-size: 10px;
-  background-color: #c86830;
-  border: 5px;
-  border-style: solid;
-  border-color: #c86830;
-  font-style: 'Comfortaa', sans-serif;
-  font-size: 30px;
-}
-.txt-center {
-  text-align: center;
-}
-.button-link a {
-  color: white;
-  padding: 10px 20px;
-  text-decoration: none;
-  display: inline-block;
-  font-size: 16px;
-  cursor: pointer;
-  font-style: 'Comfortaa', sans-serif;
-  font-size: 30px;
-}
-.centered-content {
+.layer-on-image {
   position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  z-index: 1;
+  top: 40%; /* positions vertically center of container */
+  left: 50%; /*positions horizontally center of container */
+  transform: translate(-50%, -50%); /* */
 }
-
-@media (max-width: 480px) {
-  div {
-    top: initial;
-    margin-top: 100%;
-  }
-}
-h2 {
-  font-size: 60px;
-  color: #c86830;
-  font-style: 'Comfortaa', sans-serif;
+/*other font styles*/
+.text-align {
+  text-align: center;
 }

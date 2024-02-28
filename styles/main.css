@@ -9,6 +9,7 @@ html {
 /*page styling*/
 body {
   background-color: purple;
+  margin: 0;
 }
 /*background image*/
 #background-image-position {
@@ -19,7 +20,20 @@ body {
   padding: 0;
   background: 0;
 }
+img {
+  margin: 0;
+  padding: 0;
+}
+img[src='images/rave-image.png'] {
+  margin-left: 0; /* Remove margin from the image */
+}
+
 /*top nav bar*/
+nav {
+  margin: 0;
+  padding: 0;
+  background: 0;
+}
 #nav-background {
   position: relative;
   background: purple;
@@ -46,11 +60,16 @@ body {
 }
 .layer-on-image {
   position: absolute;
-  top: 40%; /* positions vertically center of container */
+  top: 17%; /* positions vertically center of container */
   left: 50%; /*positions horizontally center of container */
   transform: translate(-50%, -50%); /* */
 }
 /*other font styles*/
 .text-align {
   text-align: center;
+}
+.container {
+  height: auto;
+  width: auto;
+  margin-left: 0;
 }

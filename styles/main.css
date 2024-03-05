@@ -9,7 +9,7 @@ html {
 /*page styling*/
 body {
   background-color: purple;
-  margin: 0;
+  margin: 0; /* eliminates the random 8 left margin */
 }
 /*background image*/
 #background-image-position {
@@ -18,34 +18,19 @@ body {
   height: auto;
   margin: 0;
   padding: 0;
-  background: 0;
 }
-img {
-  margin: 0;
-  padding: 0;
-}
-img[src='images/rave-image.png'] {
-  margin-left: 0; /* Remove margin from the image */
-}
-
 /*top nav bar*/
-nav {
-  margin: 0;
-  padding: 0;
-  background: 0;
-}
 #nav-background {
   position: relative;
   background: purple;
-  background-size: 100vw;
-  margin: 0;
-  padding: 0;
 }
 .top-nav-styling {
   color: orange;
   font-size: 2rem;
-  margin: 0;
-  padding: 0;
+}
+.button {
+  font-size: 1.5rem;
+  font-family: caom
 }
 /*main title styling*/
 #main-title-h1 {
@@ -71,5 +56,4 @@ nav {
 .container {
   height: auto;
   width: auto;
-  margin-left: 0;
 }

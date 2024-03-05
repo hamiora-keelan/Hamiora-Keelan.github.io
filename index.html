@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <meta charset="utf-8">
+    <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link href="styles/main.css" rel="stylesheet" type="text/css" />
     <title>My blog</title>
@@ -9,15 +9,30 @@
   <body>
     <!--top nav bar-->
     <nav id="nav-background" class="top-nav-styling">
-      <a>Te houtaewa blog</a>
-      <a>Technical blog 1</a>
+      <button class="button">
+        <a href="blog/te-houtaewa-template.html">Te houtaewa blog</a>
+      </button>
+      <button class="button">
+        <a href="html-css.html">Technical blog 1</a>
+      </button>
     </nav>
-<div class="container">
-<img class="background-image-position" src="images/rave-image.png">
-    <!--main title-->
-    <header class="text-align layer-on-image">
-      <h1 id="main-title-h1">Welcome to</h1>
-      <h2 id="main-title-h2">Hami's Blog</h2>
-    </header>
-</div>
+    <div class="container">
+      <img class="background-image-position" src="images/rave-image.png" />
+      <!--main title-->
+      <header class="text-align layer-on-image">
+        <h1 id="main-title-h1">Welcome to</h1>
+        <h2 id="main-title-h2">Hami's Blog</h2>
+        <button id="btn">I am gay</button>
+        <p id="gayElement" style="visibility: hidden">Yes, you are gay</p>
+      </header>
+    </div>
+    <script>
+      const button = document.getElementById('btn')
+      button.addEventListener('click', (e) => {
+        const p = document.getElementById('gayElement')
+
+        p.style = 'visibility: visible'
+      })
+    </script>
+  </body>
 </html>

@@ -1,0 +1,48 @@
+/* fonts */
+@import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@300..700&display=swap');
+/* page styling */
+body {
+  background-color: #3e1464;
+  color: rgb(247, 247, 108);
+  margin-left: 5vw;
+  margin-right: 5vw;
+}
+@media {
+}
+h1,
+h2 {
+  font-family: Comfortaa;
+  color: #c86830;
+}
+
+.title {
+  font-family: Comfortaa;
+  color: #c86830;
+  font-size: 3em;
+}
+div {
+  background-color: #4e1184;
+  border: #c86830;
+  border-style: double;
+  padding: 1%;
+  margin-top: 1%;
+  margin-bottom: 1%;
+}
+/* classes */
+.innerlist {
+  position: relative;
+  right: 3vw;
+}
+
+/*resposive*/
+@media (max-width: 600px) {
+  body {
+    margin-left: 1vw;
+    margin-right: 1vw;
+  }
+  h1,
+  h2,
+  h3 {
+    text-align: center;
+  }
+}

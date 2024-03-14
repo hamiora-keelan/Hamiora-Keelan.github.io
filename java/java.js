@@ -1,7 +1,19 @@
 //name storage and output//
 function displayName() {
-  let nameInput = document.getElementById('nameInput')
+  let name = document.getElementById('nameInput').value
+  let helloName = document.getElementById('helloName')
+  if (helloName && helloName.onclick) {
+    alert('Hello ' + name + '!')
+  }
+  console.log(name)
 }
-displayName()
+function displayAnswer() {
+  let answer = document.getElementById('answer').value
+  let check = document.getElementById('checkAnswer')
 
-console.log(displayName)
+  if (!isNaN(answer) && parseInt(answer) === 1) {
+    alert('Correct')
+  } else {
+    alert('Incorrect')
+  }
+}

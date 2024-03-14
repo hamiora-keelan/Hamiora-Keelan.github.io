@@ -21,24 +21,231 @@
       <h2>What can Javascript do?</h2>
       <p>You can store your name!!!</p>
       <label for="nameInput"></label>
-      <input type="text" id="nameInput" placeholder="Josh" />
+      <input
+        class="input-text"
+        type="text"
+        id="nameInput"
+        placeholder="enter name here"
+      />
 
       <p>
         enables the pursuers of the internet to interact with websites: Push a
-        button and find out
+        button and find out.
       </p>
-
-      <p>It can do math</p>
+      <button id="helloName" onclick="displayName ()">
+        Click to see JS in action
+      </button>
+      <p>It can do math.</p>
+      <div class="math">
+        <label for="math"></label>
+        <p class="problem">1 + 1=</p>
+        <input class="input-number" type="number" id="answer" placeholder="0" />
+        <button id="checkAnswer" onclick="displayAnswer ()">
+          Submit answer
+        </button>
+      </div>
 
       <p>
         Apparently it can even react to the amount of time spent on the page,
         spend long enough on the page and discover if I figured out how to do
-        that
+        that.
       </p>
       <p>
-        Sometime's JS's best bud DOMinic helps to sneak into the class room to
-        make changes to the whiteboard.
+        And sometime's JS's best bud DOMinic helps to sneak into the class room
+        to make changes to the whiteboard.
       </p>
+      <h2>Why can Javascript do all that?</h2>
+      <p>
+        Imagine HTML as the car's frame and engine block. It provides the core
+        structure, holding everything together and giving the web page its basic
+        functionality, just like the engine gives the car its power. Then comes
+        CSS, the car's paint job and upholstery. It determines how the web page
+        looks, from the colours and fonts to the layout and styling, making it
+        visually appealing and comfortable to use.
+      </p>
+      <p>
+        Now, JavaScript is where things get interesting. It's like the car's
+        steering wheel and gas pedal. JavaScript adds interactivity to the web
+        page. JavaScript lets users interact with the page. They can click
+        buttons, submit forms, and see the content update dynamically.
+      </p>
+      <p>
+        Think of the DOM as the car's complete instruction manual. It holds
+        information about every element on the web page, like buttons, images,
+        and text. It refers to this information as nodes. Using this manual,
+        JavaScript can tell the web page to do things, by accesing and altering
+        the nodes.
+      </p>
+    </div>
+    <div>
+      <h1>Variables</h1>
+      <p>
+        Variables are like little boxes that hold information. Variable's
+        require three vital pieces of information to form a variable.
+
+        <code> let identity = “value” </code>
+      </p>
+      <ul>
+        <li>
+          <code>let</code>determines the code to be a variable. Old school
+          JavaScript used to use <code>var</code>
+        </li>
+        <li>
+          <code>identity</code>creates a unique identity for the variable.
+        </li>
+        <li>
+          <code>"value"</code>You put data (the value) into the variable, like
+          putting something in the box. This data can be numbers, text, lists,
+          or even more complex values.
+        </li>
+      </ul>
+      <p>
+        Imagine attending a conference where speakers are required to wear hats
+        of different colors. Each hat symbolizes the speaker's identity, while
+        their name represents their value. This system enables the host to
+        summon speakers to the stage based on the colour of their hat rather
+        than their name. But variables aren't just limited to names, they could
+        also refer to numbers <code> let age = 21 </code>
+      </p>
+    </div>
+    <div>
+      <h1>Objects and Arrays</h1>
+      <p>
+        Objects and arrays provide the clear organisation of information, to
+        later be accessed by functions, loops and more.
+      </p>
+      <h2>Objects</h2>
+      <p>
+        Let's use the conference analogy again, but this time, let's imagine the
+        hat doesn't just represent the speakers name. The hat also represents
+        the speakers allotted presentation duration, the presentation topic and
+        a contact email for following up. In JS this may look something like
+        this:
+      </p>
+
+        <code>const greenHat = {name: 'Mike', duration: 5, topic: 'cleaning',
+          email: 'mike@cleanco.com'}</code>
+       
+        <p> <code> const </code> determines the code to be an object.</p> 
+      </p>
+      <h2>Array</h2>
+      <p>
+        Objects serve as valuable tools for organizing a comprehensive set of
+        information related to a specific topic, particularly when that topic
+        entails multiple aspects. However, in scenarios requiring a more
+        straightforward structure, arrays may be more appropriate. Arrays excel
+        at storing data sequentially and orderly. Consider a situation where
+        Mike wishes to identify the individuals seated at his table during a
+        conference. Mike finds the seating arrangement
+        <code>(Josh, Jesse, Maddy, Fred, Mike, Sarah) </code> , each seat is
+        labeled from [0] to [5] representing the six seats on the table. Mike is
+        seated on seat [4] and he now wants to know who he is seated next to.
+        How can he do this using an Array?
+        <code>const seatingArrangement = ["Josh", "Jesse", "Maddy", "Fred", "Mike", "Sarah"];
+        </code>
+      </p>
+    </div>
+    <div>
+      <h1>Functions</h1>
+      <p>In the world of JavaScript, functions play a crucial role akin to the trusty knife and fork you use during a meal. Just as these utensils are essential for cutting and eating your food, functions are vital tools for organizing and executing your code.</p>
+      <p>Picture yourself at a dinner table, faced with a hearty meal. As you pick up your knife and fork, you instinctively know how to use them to cut your food into manageable pieces and bring them to your mouth for consumption. Similarly, functions in JavaScript are designed to perform specific tasks or operations within your code. </p>
+      <p>Think of functions as modular units of code that you can reuse throughout your script. Just as you can use the same knife and fork to eat different dishes, you can employ functions multiple times in your code to execute the same task wherever it's needed. This reusability not only saves time but also promotes efficiency and consistency in your programming endeavors.</p>
+      <p>When you invoke a function, you're essentially delegating a specific task to it, much like how you rely on your knife and fork to handle different aspects of your meal. You don't need to worry about the inner workings of the function; you simply provide it with the necessary input and expect the desired output.</p>
+    </div>
+    <div>
+      <h1>Control Flow</h1>
+      <p>
+        I am fortunate enough to travel more frequently than most, but I am not
+        fortunate enough to have the privilege of priority boarding. So, I get
+        to sit there, and observe each passenger boarding in order of priority,
+        starting with the old and sickly, progressing to premium and
+        loyalty-based passengers, and finally, to economy passengers. A simple
+        sequence, however, not all airlines board planes with the same sequence.
+        Javascript control flow refers to the order that code is executed. The
+        default order of execution is top to bottom, but like an airline, you
+        are able to modify the order of which the code is executed using
+        statements.
+      </p>
+      <h2>Conditonal Statements</h2>
+      <p>
+        Conditonal statements execute code on the fufilment of certain
+        conditons, the most common conditions are:
+      </p>
+      <ul>
+        <li>
+          <code>if</code> executes the code providing the condition is true.
+        </li>
+        <li>
+          <code>else if</code> provides an additonal condition if
+          <code>if</code> returns false.
+        </li>
+        <li>
+          <code>else</code> executes if all remaining conditions return false.
+        </li>
+      </ul>
+      <code
+        >let age = 18; if (age >= 18) { console.log("You are eligible to
+        vote."); } else { console.log("You are not eligible to vote."); }
+      </code>
+      <h2>Looping Statements</h2>
+      <p>
+        Looping enables the repetitive execution of code, some examples are:
+      </p>
+      <ul>
+        <li>
+          <code>for</code> uses a counter variable to execute code repeatedly.
+        </li>
+        <li>
+          <code>while</code> providing a condition is true, the code will be
+          repeatedly executed.
+        </li>
+        <code
+          >// Print numbers from 1 to 5 for (let i = 1; i <= 5; i++) {
+          console.log(i); }</code
+        >
+      </ul>
+      <p>
+        Understanding control flow and mastering the manipulation of execution
+        order through statements empower you to create sophisticated programs
+        capable of making decisions based on diverse parameters.
+      </p>
+    </div>
+    <div>
+      <h1>The peoples favorite.... Loops</h1>
+      <p>
+        Expanding on loop statements, loops can repeatedly complete a defined
+        task and activate on certain conditons. For example, Mike works for a
+        cleaning company, Mike knows he has three jobs on Tuesday, one in Te
+        aro, one in Johnsonville and one in Newlands, Mike also knows he needs
+        to alert his boss when the jpb is complete. What could this look like as
+        code?
+      </p>
+      <code>
+        const locations = ["Te aro", "Johnsonville", "Newlands"];for (let i = 0;
+        i < locations.length; i++) { const currentLocation = locations[i];
+        console.log(`Cleaning at ${currentLocation}`); console.log(`Job
+        completed at ${currentLocation}, notifying boss.`);
+      </code>
+      <p>
+        The <code>const locations</code> array holds the names of the three
+        suburbs where Mike has jobs. The
+        <code>for (let i = 0; i < locations.length; i++)</code> loop iterates
+        through the locations array. Inside the loop: The current location is
+        retrieved using its index (i) then gets stored in currentLocation. A
+        message is logged simulating cleaning the job at the current location.
+        Another message is logged simulating alerting the boss that the job is
+        complete.
+      </p>
+    </div>
+    <div>
+      <h1>Summary</h1>
+      <summary>
+        <p>JavaScript's magic comes from its ability to manipulate web pages. It works alongside HTML (structure) and CSS (styling) to bring web pages to life. Imagine HTML as the bones of a web page, CSS as the muscles and skin, and JavaScript as the brain.
+
+          JavaScript interacts with the Document Object Model (DOM), a blueprint of a web page. By modifying the DOM, JavaScript can dynamically change content, add interactivity, and respond to user actions.
+          
+          Core building blocks like variables, functions, and control flow statements allow JavaScript to organize data, perform tasks efficiently, and make decisions based on conditions. This combination enables complex and engaging web experiences.</p>
+     </summary>
     </div>
   </body>
 </html>

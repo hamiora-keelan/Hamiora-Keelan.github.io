@@ -22,11 +22,17 @@ p {
   font-family: Roboto;
   font-size: 0.95em;
 }
+li {
+  width: 45%;
+  font-family: Roboto;
+  font-size: 0.95em;
+}
 
 .title {
   font-family: Comfortaa;
   color: #c86830;
   font-size: 3em;
+  text-align: center;
 }
 div {
   background-color: #4e1184;
@@ -35,6 +41,18 @@ div {
   padding: 1%;
   margin-top: 1%;
   margin-bottom: 1%;
+}
+section {
+  background-color: #501583;
+  border: #8f4a22;
+  border-style: solid;
+  padding: 0.5%;
+  margin-top: 0.5%;
+  margin-bottom: 0.5%;
+  border-radius: 5%;
+  padding-left: 1%;
+  padding-right: 1%;
+  padding-bottom: 2%;
 }
 code {
   font-family: 'Courier New', Courier, monospace;
@@ -58,6 +76,18 @@ code {
 }
 .problem {
   width: 3%;
+}
+.section-title {
+  position: relative;
+  left: 1vw;
+  font-size: 2.5em;
+}
+.link-style {
+  color: #c1764a;
+  font-family: Roboto;
+}
+.anchor-style {
+  list-style: none;
 }
 /*js styling*/
 .input-text {

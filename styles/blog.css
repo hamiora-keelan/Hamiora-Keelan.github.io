@@ -62,6 +62,22 @@ code {
   border-radius: 4px;
   overflow: hidden;
 }
+table {
+  border: 1px solid #c86830;
+}
+
+th {
+  position: relative;
+  width: 50%;
+  border: 1px solid #c86830;
+}
+td {
+  position: relative;
+  width: 50%;
+  margin-right: 50%;
+  vertical-align: middle;
+  border: 1px solid #c86830;
+}
 /* classes */
 .innerlist {
   position: relative;
